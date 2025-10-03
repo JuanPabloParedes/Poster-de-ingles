@@ -1,0 +1,265 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Soundtrack of My Life</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 60px 40px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        .songs-container {
+            padding: 40px;
+        }
+        
+        .song-card {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .song-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+        
+        .song-card.childhood {
+            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+        }
+        
+        .song-card.teenage {
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+        }
+        
+        .song-card.current {
+            background: linear-gradient(135deg, #d299c2 0%, #fef9d7 100%);
+        }
+        
+        .song-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            gap: 20px;
+        }
+        
+        .song-icon {
+            font-size: 3em;
+        }
+        
+        .song-info h2 {
+            font-size: 1.8em;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        
+        .song-title {
+            font-size: 1.3em;
+            color: #34495e;
+            font-weight: bold;
+            margin-bottom: 3px;
+        }
+        
+        .artist {
+            color: #7f8c8d;
+            font-style: italic;
+        }
+        
+        .event {
+            background: rgba(255,255,255,0.7);
+            padding: 15px;
+            border-radius: 10px;
+            margin: 15px 0;
+            border-left: 4px solid #3498db;
+        }
+        
+        .event strong {
+            color: #2c3e50;
+        }
+        
+        .story {
+            background: rgba(255,255,255,0.5);
+            padding: 20px;
+            border-radius: 10px;
+            line-height: 1.8;
+            color: #2c3e50;
+            font-style: italic;
+        }
+        
+        .qr-section {
+            margin-top: 20px;
+            text-align: center;
+            padding: 15px;
+            background: rgba(255,255,255,0.6);
+            border-radius: 10px;
+        }
+        
+        .qr-placeholder {
+            width: 150px;
+            height: 150px;
+            background: white;
+            margin: 10px auto;
+            border: 3px dashed #3498db;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            color: #3498db;
+            font-weight: bold;
+        }
+        
+        .music-note {
+            position: absolute;
+            opacity: 0.1;
+            font-size: 100px;
+            color: #2c3e50;
+        }
+        
+        .note1 { top: 20px; right: 50px; }
+        .note2 { bottom: 50px; left: 30px; }
+        .note3 { top: 50%; right: 20px; }
+        
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .song-header {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header" style="position: relative;">
+            <div class="music-note note1">♪</div>
+            <div class="music-note note2">♫</div>
+            <div class="music-note note3">♪</div>
+            <h1>🎵 The Soundtrack of My Life 🎵</h1>
+            <p>Three songs that represent important moments in my journey</p>
+        </div>
+        
+        <div class="songs-container">
+            <!-- Childhood Song -->
+            <div class="song-card childhood">
+                <div class="song-header">
+                    <div class="song-icon">👶</div>
+                    <div class="song-info">
+                        <h2>1. Childhood Song</h2>
+                        <div class="song-title">"Ai Se Eu Te Pego"</div>
+                        <div class="artist">Michel Teló</div>
+                    </div>
+                </div>
+                
+                <div class="event">
+                    <strong>Memory:</strong> A special moment with my grandparents in Pasto
+                </div>
+                
+                <div class="story">
+                    I used to sing this song to my two grandparents when we were in Pasto. My grandfather was still alive, and I remember how happy they looked when I performed it for them. This song always reminds me of those precious moments with my family.
+                </div>
+                
+                <div class="qr-section">
+                    <p><strong>🎧 Listen on YouTube/Spotify</strong></p>
+                    <img src="https://i.imgur.com/wuvyBhC.png" alt="QR Code - Ai Se Eu Te Pego" style="width: 150px; height: 150px; border: 3px solid #3498db; border-radius: 10px; background: white; padding: 10px;">
+                    <small>Scan to listen to the song</small>
+                </div>
+            </div>
+            
+            <!-- Teenage Song -->
+            <div class="song-card teenage">
+                <div class="song-header">
+                    <div class="song-icon">🎸</div>
+                    <div class="song-info">
+                        <h2>2. Teenage Song</h2>
+                        <div class="song-title">"Feli"</div>
+                        <div class="artist">Ñejo</div>
+                    </div>
+                </div>
+                
+                <div class="event">
+                    <strong>Memory:</strong> A new beginning after a difficult time
+                </div>
+                
+                <div class="story">
+                    I used to listen to this song during a tough period in my teenage years. It marked my life because I took it as a symbol of a new beginning. This song gave me hope and helped me move forward after going through something really difficult.
+                </div>
+                
+                <div class="qr-section">
+                    <p><strong>🎧 Listen on YouTube/Spotify</strong></p>
+                    <img src="https://i.imgur.com/xkzNX8b.png" alt="QR Code - Feli" style="width: 150px; height: 150px; border: 3px solid #3498db; border-radius: 10px; background: white; padding: 10px;">
+                    <small>Scan to listen to the song</small>
+                </div>
+            </div>
+            
+            <!-- Current Song -->
+            <div class="song-card current">
+                <div class="song-header">
+                    <div class="song-icon">🎧</div>
+                    <div class="song-info">
+                        <h2>3. Current Song</h2>
+                        <div class="song-title">"Be My Lover"</div>
+                        <div class="artist">La Bouche</div>
+                    </div>
+                </div>
+                
+                <div class="event">
+                    <strong>Memory:</strong> Finding peace during stressful university moments
+                </div>
+                
+                <div class="story">
+                    Now I listen to this song when I feel stressed about university. It brings me so much peace and helps me calm down. Whenever I have too much pressure from assignments or exams, this song helps me relax and find balance.
+                </div>
+                
+                <div class="qr-section">
+                    <p><strong>🎧 Listen on YouTube/Spotify</strong></p>
+                    <img src="https://i.imgur.com/ao4Lp1Q.png" alt="QR Code - Be My Lover" style="width: 150px; height: 150px; border: 3px solid #3498db; border-radius: 10px; background: white; padding: 10px;">
+                    <small>Scan to listen to the song</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
